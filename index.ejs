@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%- title %></title>
+
+    <link rel="stylesheet" href="home.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<%- include('./header.ejs') %>
+
+<!-- home section starts here  -->
+
+    <!-- 'id' is used, it can help in achoring on the same webpage also using 'id' and 'href' attribute -->
+    <section class="sec-home " id="home">
+        <div class="home each-sec-main-div-width">
+            <div class="home-content">
+                <div class="home-txt">
+                    <h2 class="home-txt-1st-line">I'm <span>Ahmed.</span></h2>
+                    <h2 class="home-txt-2nd-line">Web Designer & Developer</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius recusandae animi at a doloribus,
+                        illo deserunt voluptas quis, error ut, nostrum quam. Id maiores illum dolor maxime laborum,
+                        suscipit illo ipsum doloribus reiciendis labore eveniet culpa incidunt. At assumenda fugit
+                        obcaecati nobis consequuntur quisquam rerum quod architecto magni? Eveniet aspernatur harum
+                        aliquam ducimus alias dignissimos totam perferendis placeat id sit!
+                    </p>
+                </div>
+                <div class="social-links">
+                    <a href="">
+                        <i class="fa-brands fa-github social-icon"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-brands fa-facebook social-icon"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-brands fa-linkedin social-icon"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-solid fa-envelope social-icon  "></i>
+                    </a>
+                </div>
+            </div>
+            <div class="home-img">
+                <div class="home-img-bg">
+
+                </div>
+                <img src="./images/hamza.png" alt="profile photo">
+            </div>
+        </div>
+    </section>
+    <!-- home section end  here  -->
+
+
+    <%- include('./footer.ejs') %>
+
+</body>
+
+</html>

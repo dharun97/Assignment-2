@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%- title %></title>
+
+    <link rel="stylesheet" href="home.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<%- include('./header.ejs') %>
+
+<!-- contact section starts here  -->
+<section class="sec-contact" id="contact">
+    <h1 class="sec-heading contact-heading">Contact Me</h1>
+    <div class="contact each-sec-main-div-width">
+        <form action="" class="form-width">
+            <div class="form">
+
+                <!-- <div class="form-heading">
+                <p>For any question, comment or project related query. Fill the form and Get in Touch.</p>
+                 </div> -->
+
+                <!-- 'type' attribute is used for validation in inputs
+                'required' attribute is for compulsory entries, user must enter the cetail to send the data -->
+                <div class="form-single-box">
+                    <label for="name">Name:</label>
+                    <input type="text" class="form-inputs" id="name" name="f-name" placeholder="Your Name" required>
+                </div>
+                <div class="form-single-box">
+                    <label for="user-email">Email:</label>
+                    <input type="email" class="form-inputs" id="user-email" name="user-email"
+                        placeholder="Your Email" required>
+                </div>
+                <!-- 'minlength' and 'max-length' attributes are for the range of letters that is allowed for the user-->
+                <div class="form-single-box">
+                    <label for="message">Message:</label>
+                    <textarea name="message" class="form-inputs" id="message" cols="30" rows="10"
+                        placeholder="Write here..." aria-required="true" minlength="2" maxlength="200"></textarea>
+                </div>
+                <!-- this submit button is for sending the enties that user has filled in the form to the server-side -->
+                <div class="form-single-box form-submit-div">
+                    <input type="submit" class="submit-button" value="Send Message">
+                </div>
+            </div>
+        </form>
+
+        <div class="form-img">
+            <img src="./images/contact-us-rafiki-orange.png" alt="">
+        </div>
+    </div>
+</section>
+<!-- contact section end  here  -->
+
+
+    <%- include('./footer.ejs') %>
+
+</body>
+
+</html>

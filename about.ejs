@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%- title %></title>
+
+    <link rel="stylesheet" href="home.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<%- include('./header.ejs') %>
+
+<!-- about section starts here  -->
+<section class="sec-about" id="about">
+    <h1 class="sec-heading about-heading">About</h1>
+
+    <div class="about each-sec-main-div-width">
+        <div class="about-intro about-child">
+            <!-- <h2>I'm Ahmed.</h2> -->
+            <h2>Web Designer & Developer</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius recusandae animi at a doloribus,
+                illo deserunt voluptas quis, error ut, nostrum quam. Id maiores illum dolor maxime laborum,
+                suscipit illo ipsum doloribus reiciendis labore eveniet culpa incidunt. At assumenda fugit
+                obcaecati nobis consequuntur quisquam rerum quod architecto magni? Eveniet aspernatur harum
+                aliquam ducimus alias dignissimos totam perferendis placeat id sit!
+                suscipit illo ipsum doloribus reiciendis labore eveniet culpa incidunt. At assumenda fugit
+                obcaecati nobis consequuntur quisquam rerum quod architecto magni? Eveniet aspernatur harum
+                aliquam ducimus alias dignissimos totam perferendis.
+            </p>
+        </div>
+        <div class="about-skills about-child">
+            <h2>Skills</h2>
+            <div class="skills-set">
+                <div class="skill-img">
+                    <img src="./images/html.png" alt="">
+                </div>
+                <div class="skill-img">
+                    <img src="./images/css.png" alt="">
+                </div>
+                <div class="skill-img">
+                    <img src="./images/js.png" alt="">
+                </div>
+                <div class="skill-img">
+                    <img src="./images/bootstrap.png" alt="">
+                </div>
+                <div class="skill-img">
+                    <img src="./images/node.png" alt="">
+                </div>
+                <div class="skill-img">
+                    <img src="./images/jquery.png" alt="">
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- about section end  here  -->
+
+
+    <%- include('./footer.ejs') %>
+
+</body>
+
+</html>
